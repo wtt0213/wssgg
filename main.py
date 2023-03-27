@@ -20,8 +20,6 @@ def main():
         print(config)
     
     model = MMGNet(config)
-    # model.train()
-    # exit(0)
 
     save_path = os.path.join(config.PATH,'config', model.model_name, model.exp)
     os.makedirs(save_path, exist_ok=True)
